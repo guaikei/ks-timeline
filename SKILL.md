@@ -6,6 +6,11 @@ name: ks-timeline
 description: "快手公开数据时间线（只读）：关键词搜视频、博主作品与粉丝数据、视频评论，输出 JSON，不登录不发布。触发词：快手、Kuaishou、kwai、快手搜索、快手评论、快手博主。用户要查快手视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "快手成长时间线｜发文节奏·历史作品·互动变化·话题升温"
+display_name_en: "Kuaishou Timeline"
+description_zh: "快手公开数据时间线接口（只读）：作品详情、视频评论、博主作品与粉丝数据、关键词搜视频，按发布时间排布并回溯历史，复盘发文节奏、互动数变化与话题升温过程"
+description_en: "Read-only Kuaishou timeline data source, no account login, no ban risk. One command returns a creator's public posting history as structured JSON arranged by publish time, so AI can reconstruct the account timeline and review cadence. Capabilities: 1) Keyword video search sorted by general, newest or most liked, inside 1-day / 7-day / 30-day windows, with duration filters (under 1 min, 1-5 min, over 5 min). 2) Creator post listing sorted by newest or hottest, keeping original publish times for backtracking; interactions-only mode (--limit 0) returns fans, likes and follows. 3) Post detail: caption, plays, likes, comments, collects, shares. 4) Comment scraping for sentiment review. 5) Recipes: map posting rhythm, compare metrics before vs after a topic heats up, trace viral videos. Scale: pay-as-you-go up to 10,000 items per call; monthly plans cap search at 30, posts at 50, comments at 60, then PLAN_LIMIT. Zero dependencies, Node.js 16.14+, GUAIKEI_API_TOKEN."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "📷"
